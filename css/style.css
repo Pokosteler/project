@@ -1,0 +1,328 @@
+ 
+.navbar-inverse .navbar-nav  > a:hover, 
+.navbar-inverse .navbar-nav  > a:focus {
+/*  color: #000000;
+    background-color: #ffbf00;*/
+    background: black;
+    color:white;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.text-main1{
+    margin: 150px 30px 0 400px;
+    font-size: 20px;
+}
+
+.text-main2{
+    margin: 200px 30px 60px 60px;
+    font-size: 20px;
+}
+
+.text-challenge{
+	margin: 200px 110px 60px 60px;
+    font-size: 20px;
+    position: absolute;
+    left: 110px;
+}
+
+.formmm{
+    margin: 200px 60px 10px 30px;
+    width: 400px;
+}
+
+#login{
+	margin: 0 0 0 0;
+}
+
+#login:hover{
+	color: white;
+    background-color: black;
+}
+
+.email{
+	margin:100px 0 30px 0;
+	width: 400px;
+}
+
+.join{
+	margin:200px 0 0 30px;
+    width: 500px;
+}
+
+#sumbit-join{
+	margin:0 0 40px 135px;
+}
+
+#dropzone{
+	margin:0 20px 80px 635px;
+	position: absolute;
+	width: 300px;
+	top: -158px;
+}
+
+#add-file{
+	margin:0 0 80px 885px;
+	position: absolute;
+	top: -158px;
+}
+
+#add-file:hover{
+	color: white;
+    background-color: black;
+}
+
+#cats{
+	position: absolute;
+	top: -450px;
+	left: 670px;
+}
+
+#cats-prof{
+	position: absolute;
+	top: 150px;
+	left: 160px;
+}
+
+#cats-main{
+	position: absolute;
+	top: 150px;
+	left: 100px;
+}
+
+#username-profile,#email-profile,#date-profile,#sex-profile,#country-profile,#city-profile,#username1-profile,#sex1-profile,#country1-profile,#city1-profile,#date1-profile{
+	position: absolute;
+	left: 500px;
+	font-size: 16px;
+}
+
+#username-profile,#username1-profile{
+    top: 150px;
+    font-size: 30px;
+}
+
+#email-profile,#date1-profile{
+	top: 200px;
+}
+
+#date-profile,#sex1-profile{
+	top: 240px;
+}
+
+#sex-profile,#country1-profile{
+	top: 280px;
+}
+
+#country-profile,#city1-profile{
+	top: 320px;
+}
+
+#city-profile{
+	top: 360px;
+}
+
+#search-str,#friends-str,#dictionary-str,#challenge-str{
+	margin: 150px 0 0 60px;
+	font-size: 30px;
+	position: absolute;
+	left: 110px;
+}
+
+.search-friends{
+    margin:20px 0 0 60px;
+    width: 600px;
+    position: absolute;
+	left: 110px;
+	top: 180px;
+	border: solid 2px;
+	border-radius: 6px;
+}
+
+.dictionary{
+    margin:20px 0 0 60px;
+    width: 600px;
+    position: absolute;
+	left: 110px;
+	top: 180px;
+}
+
+#area-dictionary{
+	height: 150px;
+	border: solid 2px;
+	font-size: 16px;
+}
+
+#start-challenge{
+	margin:0 10px 0 60px;
+	position: absolute;
+	width: 100px;
+	top: 380px;
+	left: 110px;
+	font-size: 16px;
+}
+
+#start-challenge:hover{
+    color: white;
+    background-color: black;
+}
+
+.table-search{
+    margin:20px 60px 60px 60px;
+    width: 600px;  
+    position: absolute;
+	left: 110px;
+	top: 240px;
+}
+
+.table-challenge{
+    margin:20px 60px 60px 60px;
+    width: 500px;  
+    position: absolute;
+	left: 110px;
+	top: 180px;
+}
+
+.friends-search{
+	margin:20px 60px 60px 60px;
+	width: 900px; 
+	position: absolute;
+	left: 110px;
+	top: 180px;
+}
+
+.table-fixed {
+    width: 100%;
+}
+
+table.table-fixed,
+table.table-fixed>thead,
+table.table-fixed>tbody,
+table.table-fixed>thead>tr,
+table.table-fixed>tbody>tr,
+table.table-fixed>thead>tr>th,
+table.table-fixed>tbody>td {
+    display: block;
+}
+
+table.table-fixed>thead>tr:after,
+table.table-fixed>tbody>tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+table.table-fixed>tbody {
+    overflow-y: scroll;
+    height: 150px;
+}
+
+table.table-fixed>thead {        
+    overflow-y: scroll;
+}
+
+table.table-fixed>thead::-webkit-scrollbar {
+    background-color: #d3d3d3;
+}
+
+table.table-fixed>thead { 
+	-ms-overflow-style: none; 
+}
+
+table.table-fixed>tbody::-webkit-scrollbar {
+    background-color: #d3d3d3;
+}
+
+table.table-fixed>tbody { 
+	-ms-overflow-style: none; 
+}
+
+table.table-fixed>thead>tr>th,
+table.table-fixed>tbody>tr>td {
+    float: left;
+}
+
+.table-bordered{
+	border: 2px solid;
+	border-radius: 4px;
+}
+
+#username-button1,#username-button2,#username-button3{
+	position: absolute;
+	top: 450px;
+	left: 160px;
+	margin:0 0 60px 0;
+	width: 250px;
+	font-size: 16px;
+}
+
+#username-button2{
+	top: 500px;	
+}
+
+#username-button3{
+	top: 550px;
+}
+
+#username-button1:hover,#username-button2:hover,#username-button3:hover{
+	color: white;
+    background-color: black;
+}
+
+.w-t,.add-dictionary{
+    margin:20px 0 0 60px;
+    width: 970px;
+    position: absolute;
+	left: 110px;
+	top: 350px;
+}
+
+.add-dictionary{
+	width: 100px;
+    top: 7px;
+    left: -45px;
+    border: solid 2px;
+    font-size: 16px;
+}
+
+.add-dictionary:hover{
+	color: white;
+    background-color: black;
+}
+
+.input-word {
+	border: 2px solid;
+}
+
+#add-to-dictionary {
+	position: absolute;
+	left: 170px;
+	top: 380px;	
+	font-size: 16px;
+}
+
+#add-to-dictionary:hover {
+   	color: white;
+    background-color: black;
+}
+
+.sign-in:hover {
+	color: white;
+    background-color: black;
+}
+
+.word{
+	font-size: 16px;
+}
+
+.tranlation{
+    font-size: 16px;
+}
+
+.footer{
+	color: white;
+}
