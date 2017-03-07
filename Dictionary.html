@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="js/app.js"></script>    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>English challenge</title>
     <!-- Bootstrap -->
@@ -53,27 +55,34 @@
           </div>
         </div>
       </nav>
-      <div class="container">
+      <div class="container" ng-controller="Dictionary">
         <p id="dictionary-str">Dictionary</p>
           <form class="dictionary">
            <div class="form-group">
              <select multiple class="form-control" id="area-dictionary">
-                <option>1. Word1 - Слово1</option>
-                <option>2. Word2 - Слово2</option>
-                <option>3. Word3 - Слово3</option>
-                <option>4. Word4 - Слово4</option>
-                <option>5. Word5 - Слово5</option>
-                <option>6. Word6 - Слово6</option>
-                <option>7. Word7 - Слово7</option>
+                <option ng-repeat="word in words">
+                <span>{{word.text}}</span>
+                </option>
              </select>
            </div>
           </form>
-          <form role="form" class="form-horizontal w-t">
+          <form class="dictionary1">
            <div class="form-group">
-             <div class="col-sm-3"><label class="word">word</label><input class="form-control input-word" placeholder="enter word" type="text" required></div>
-             <div class="col-sm-3"><label class="tranlation">translation</label><input class="form-control input-word" placeholder="enter translation" type="text" required></div>
+             <select multiple class="form-control" id="area-dictionary">
+                <option ng-repeat="translation in translations">
+                <span>{{translation.text}}</span>
+                </option>
+             </select>
+           </div>
+          </form>
+          <form role="form" class="form-horizontal w-t" ng-submit="addTodo()">
+           <div class="form-group">
+             <div class="col-sm-3"><label class="word">word</label>
+               <input class="form-control input-word" placeholder="enter word" type="text" required ng-model="todoText"></div>
+             <div class="col-sm-3"><label class="tranlation">translation</label>
+               <input class="form-control input-word" placeholder="enter translation" type="text" required ng-model="todoText1"></div>
              <div class="col-sm-3"><label></label>
-               <input type="button" value="add" class="btn btn-inverse form-control add-dictionary"onclick="location.href = '#';">
+               <input type="submit" value="add" class="btn btn-inverse form-control add-dictionary" onclick="location.href = '#';">
              </div>
            </div>
           </form>
