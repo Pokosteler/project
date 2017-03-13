@@ -61,16 +61,7 @@
            <div class="form-group">
              <select multiple class="form-control" id="area-dictionary">
                 <option ng-repeat="word in words">
-                <span>{{word.text}}</span>
-                </option>
-             </select>
-           </div>
-          </form>
-          <form class="dictionary1">
-           <div class="form-group">
-             <select multiple class="form-control" id="area-dictionary">
-                <option ng-repeat="translation in translations">
-                <span>{{translation.text}}</span>
+                <span>{{word.text+' - '+word.translation}}</span>
                 </option>
              </select>
            </div>
