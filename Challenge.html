@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,28 +53,24 @@
           </div>
         </div>
       </nav>
-      <div class="article container">
+      <div class="article container" ng-controller="Challenge">
         <p id="challenge-str">Challenge #1 (from <a href="#">system</a>)</p>   
           <form class="dictionary">
              <div class="form-group">
                <select multiple class="form-control" id="area-dictionary">
-                <option>1. Word1 - Слово1</option>
-                <option>2. Word2 - Слово2</option>
-                <option>3. Word3 - Слово3</option>
-                <option>4. Word4 - Слово4</option>
-                <option>5. Word5 - Слово5</option>
-                <option>6. Word6 - Слово6</option>
-                <option>7. Word7 - Слово7</option>
+                <option ng-repeat="word in words">
+                   <span>{{$index + 1}}.{{word.text+' - '+word.translation}}</span>
+                </option>
                </select>
              </div>
           </form>
-             <div class="form-group">
+             <div class="form-group" ng-button="addTodo()">
                <input type="button" value="add to dictionary" class="btn btn-inverse input-word" id="add-to-dictionary" onclick="location.href = 'challenges.html';">
              </div>
       </div>
       <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container-fluid footer">
-            <h6>English Challenge 2017</h6>
+            <h6>© English Challenge 2017</h6>
         </div>
       </div>
     <script src="js/jquery-backstretch-master/libs/jquery/jquery.js"></script>
