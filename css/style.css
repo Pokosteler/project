@@ -6,6 +6,10 @@
     color:white;
 }
 
+span.badge{
+    background-color: red;
+}
+
 img {
     display: inline-block;
     height: auto;
